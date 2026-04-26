@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker Screenshots</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <h2>Expense Tracker App Store Screenshots</h2>
+            <p style="margin-bottom: 15px; color: #666;">Click on any screenshot to download it as a PNG image (1080x1920 - Play Store format)</p>
+            <div class="button-group">
+                <button onclick="downloadScreenshot('screenshot1')">Download Screenshot 1</button>
+                <button onclick="downloadScreenshot('screenshot2')">Download Screenshot 2</button>
+                <button onclick="downloadScreenshot('screenshot3')">Download Screenshot 3</button>
+                <button onclick="downloadScreenshot('screenshot4')">Download Screenshot 4</button>
+                <button onclick="downloadScreenshot('screenshot5')">Download Screenshot 5</button>
+                <button onclick="downloadScreenshot('screenshot6')">Download Screenshot 6</button>
+                <button class="secondary" onclick="downloadAll()">Download All Screenshots</button>
+            </div>
+        </div>
+
+        <div class="screenshots-grid">
+            <!-- Screenshot 1: Scan Receipts -->
+            <div class="screenshot-card" id="screenshot1">
+                <div class="screenshot-header">
+                    <h3>Scan Receipts Instantly</h3>
+                    <p>Turn paper receipts into organized expenses</p>
+                </div>
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="screen-content">
+                                <div class="status-bar">
+                                    <span>9:41</span>
+                                    <span>📶 🔋</span>
+                                </div>
+                                <div class="app-header">Scan Receipt</div>
+                                <div class="app-body" style="position: relative; background: #2a2a2a;">
+                                    <div class="receipt-preview" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-2deg); width: 80%;">
+                                        <div style="font-weight: 700; margin-bottom: 12px;">Store Mart</div>
+                                        <div style="font-size: 11px; color: #666; margin-bottom: 12px;">Groceries</div>
+                                        <div style="border-top: 1px dashed #ccc; padding-top: 12px;">
+                                            <div style="display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 11px;">
+                                                <span>Milk</span>
+                                                <span>₦450</span>
+                                            </div>
+                                            <div style="display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 11px;">
+                                                <span>Bread</span>
+                                                <span>₦600</span>
+                                            </div>
+                                            <div style="display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 11px;">
+                                                <span>Eggs</span>
+                                                <span>₦750</span>
+                                            </div>
+                                            <div style="border-top: 2px solid #333; margin-top: 12px; padding-top: 8px; display: flex; justify-content: space-between; font-weight: 700;">
+                                                <span>Total:</span>
+                                                <span>₦8,200</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="checkmark">✓</div>
+                                    <div class="camera-button">
+                                        <div class="camera-inner"></div>
+                                    </div>
+                                </div>
+                               <div class="bottom-nav">
+                                    <div class="nav-item active">
+                                        <div class="nav-icon">
+                                            <i class="fa fa-home active"></i>
+
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="nav-item">
+                                        <div class="nav-icon">
+                                             <i class="fa fa-pie-chart "></i>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="nav-item">
+                                        <div class="nav-icon">
+                                             <i class="fa fa-trophy "></i>
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="nav-item">
+                                        <div class="nav-icon">
+                                             <i class="fa fa-cog "></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screenshot 2: Smart Scanning -->
+            <div class="screenshot-card" id="screenshot2">
+                <div class="screenshot-header">
+                    <h3>Smart Receipt Scanning</h3>
+                    <p>Accurate OCR for totals, dates & merchants</p>
+                </div>
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="screen-content">
+                                <div class="status-bar">
+                                    <span>9:41</span>
+                                    <span>📶 🔋</span>
+                                </div>
+                                <div class="app-header">Home</div>
+                                <div class="app-body">
+                                    <div class="expense-list">
+                                        <div class="expense-item">
+                                            <div class="expense-icon" style="background: #e3f2fd;">🏪</div>
+                                            <div class="expense-details">
+                                                <div class="expense-name">Store Mart</div>
+                                                <div class="expense-date">Apr 7, 2025 • 10:45</div>
+                                            </div>
+                                            <div class="expense-amount">₦250.00</div>
+                                        </div>
+                                        <div class="expense-item">
+                                            <div class="expense-icon" style="background: #fce4ec;">🍓</div>
+                                            <div class="expense-details">
+                                                <div class="expense-name">Strawthins</div>
+                                                <div class="expense-date">Today • 09:30</div>
+                                            </div>
+                                            <div class="expense-amount">+₦8,000</div>
+                                        </div>
+                                        <div class="expense-item">
+                                            <div class="expense-icon" style="background: #fff3e0;">🥛</div>
+                                            <div class="expense-details">
+                                                <div class="expense-name">Milk</div>
+                                                <div class="expense-date">Today • 08:15</div>
+                                            </div>
+                                            <div class="expense-amount">+₦3,000</div>
+                                        </div>
+                                        <div class="expense-item">
+                                            <div class="expense-icon" style="background: #f3e5f5;">🥚</div>
+                                            <div class="expense-details">
+                                                <div class="expense-name">Eggs</div>
+                                                <div class="expense-date">Yesterday • 16:20</div>
+                                            </div>
+                                            <div class="expense-amount">+₦3,000</div>
+                                        </div>
+                                        <div class="expense-item">
+                                            <div class="expense-icon" style="background: #e8f5e9;">🍚</div>
+                                            <div class="expense-details">
+                                                <div class="expense-name">Rice</div>
+                                                <div class="expense-date">Yesterday • 14:00</div>
+                                            </div>
+                                            <div class="expense-amount">+₦3,000</div>
+                                        </div>
+                                    </div>
+                                    <div style="margin-top: 20px; text-align: center; color: #1a5f3f; font-weight: 700; font-size: 16px;">
+                                        Total: Apr 7, 2025<br>
+                                        +₦8,250.00
+                                    </div>
+                                </div>
+                                <div class="bottom-nav">
+                                    <div class="nav-item active">
+                                        <div class="nav-icon">
+                                            <i class="fa fa-home active"></i>
+
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="nav-item">
+                                        <div class="nav-icon">
+                                             <i class="fa fa-pie-chart "></i>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="nav-item">
+                                        <div class="nav-icon">
+                                             <i class="fa fa-trophy "></i>
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="nav-item">
+                                        <div class="nav-icon">
+                                             <i class="fa fa-cog "></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screenshot 3: Manual Entry -->
+            <div class="screenshot-card" id="screenshot3">
+                <div class="screenshot-header">
+                    <h3>Edit & Add Expenses Manually</h3>
+                    <p>Full control when you need it</p>
+                </div>
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="screen-content">
+                                <div class="status-bar">
+                                    <span>9:41</span>
+                                    <span>📶 🔋</span>
+                                </div>
+                                <div class="app-header">Add Manually</div>
+                                <div class="app-body">
+                                    <div class="manual-input">
+                                        <div class="chip" style="background: #e8f5e9; align-self: flex-start;">
+                                            🛒 Groceries <strong style="margin-left: 8px;">+₦8,250</strong>
+                                        </div>
+                                        <div style="font-size: 11px; color: #999;">Date: Today &nbsp;&nbsp; 10:45</div>
+                                        
+                                        <div class="chip" style="background: #fff3e0; align-self: flex-start;">
+                                            🚗 Transport <strong style="margin-left: 8px;">+₦3,500</strong>
+                                        </div>
+                                        
+                                        <div class="chip" style="background: #fce4ec; align-self: flex-start;">
+                                            🛍️ Shopping <strong style="margin-left: 8px;">+₦5,200</strong>
+                                        </div>
+
+                                        <div style="background: #f0f9f4; padding: 16px; border-radius: 12px; margin-top: 12px;">
+                                            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                                                <div style="width: 48px; height: 48px; background: #1a5f3f; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">📧</div>
+                                                <div style="flex: 1;">
+                                                    <div style="font-weight: 600; color: #1a5f3f; margin-bottom: 4px;">Groceries</div>
+                                                    <div style="font-size: 11px; color: #666;">Just Now</div>
+                                                </div>
+                                                <div style="color: white; background: #1a5f3f; padding: 4px 12px; border-radius: 12px; font-size: 12px;">✓</div>
+                                            </div>
+                                            <button class="add-button">Save Expense</button>
+                                        </div>
+
+                                        <div style="margin-top: 16px; text-align: center; color: #999; font-size: 11px;">
+                                            Scan or type for faster entry
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-nav">
+                                    <div class="nav-item active">
+                                        <div class="nav-icon">
+                                            <i class="fa fa-home active"></i>
+
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="nav-item">
+                                        <div class="nav-icon">
+                                             <i class="fa fa-pie-chart "></i>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="nav-item">
+                                        <div class="nav-icon">
+                                             <i class="fa fa-trophy "></i>
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="nav-item">
+                                        <div class="nav-icon">
+                                             <i class="fa fa-cog "></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screenshot 4: Auto Categorize -->
+            <div class="screenshot-card" id="screenshot4">
+                <div class="screenshot-header">
+                    <h3>Auto-Categorize Expenses</h3>
+                    <p>Food, Transport, Shopping & more</p>
+                </div>
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="screen-content">
+                                <div class="status-bar">
+                                    <span>9:41</span>
+                                    <span>📶 🔋</span>
+                                </div>
+                                <div class="app-header">Reports</div>
+                                <div class="app-body">
+                                    <div style="text-align: center; margin-bottom: 8px; color: #666; font-size: 11px;">My wallet: <strong>₦128,455</strong></div>
+                                    <div class="pie-chart">
+                                        <div class="pie-center">
+                                            <div class="pie-total">Total</div>
+                                        </div>
+                                    </div>
+                                    <div class="legend">
+                                        <div class="legend-item">
+                                            <div class="legend-color" style="background: #4caf50;"></div>
+                                            <span style="flex: 1;">Groceries 35%</span>
+                                        </div>
+                                        <div class="legend-item">
+                                            <div class="legend-color" style="background: #ff9800;"></div>
+                                            <span style="flex: 1;">Transport 30%</span>
+                                        </div>
+                                        <div class="legend-item">
+                                            <div class="legend-color" style="background: #2196f3;"></div>
+                                            <span style="flex: 1;">Lounging 20%</span>
+                                        </div>
+                                        <div class="legend-item">
+                                            <div class="legend-color" style="background: #ffc107;"></div>
+                                            <span style="flex: 1;">Shopping 15%</span>
+                                        </div>
+                                    </div>
+                                    <div class="insights-title" style="margin-top: 20px;">Top Expenses</div>
+                                    <div class="top-expenses">
+                                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: #f8f9fa; border-radius: 8px;">
+                                            <div style="display: flex; align-items: center; gap: 10px;">
+                                                <div style="width: 8px; height: 30px; background: #4caf50; border-radius: 4px;"></div>
+                                                <div>
+                                                    <div style="font-weight: 600; font-size: 13px;">Store Mart</div>
+                                                    <div style="font-size: 10px; color: #666;">This Week</div>
+                                                </div>
+                                            </div>
+                                            <div style="font-weight: 700; color: #1a5f3f;">₦128,250</div>
+                                        </div>
+                                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: #f8f9fa; border-radius: 8px;">
+                                            <div style="display: flex; align-items: center; gap: 10px;">
+                                                <div style="width: 8px; height: 30px; background: #ff9800; border-radius: 4px;"></div>
+                                                <div>
+                                                    <div style="font-weight: 600; font-size: 13px;">Uber Rides</div>
+                                                    <div style="font-size: 10px; color: #666;">Last 7 days</div>
+                                                </div>
+                                            </div>
+                                            <div style="font-weight: 700; color: #1a5f3f;">₦53,1900</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-nav">
+                                    <div class="nav-item">
+                                        <div class="nav-icon">
+                                            <i class="fa fa-home "></i>
+
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="nav-item active">
+                                        <div class="nav-icon">
+                                             <i class="fa fa-pie-chart active"></i>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="nav-item">
+                                        <div class="nav-icon">
+                                             <i class="fa fa-trophy "></i>
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="nav-item">
+                                        <div class="nav-icon">
+                                             <i class="fa fa-cog "></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screenshot 5: Money Insights -->
+            <div class="screenshot-card" id="screenshot5">
+                <div class="screenshot-header">
+                    <h3>See Where Your Money Goes</h3>
+                    <p>Clear charts & monthly breakdowns</p>
+                </div>
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="screen-content">
+                                <div class="status-bar">
+                                    <span>9:41</span>
+                                    <span>📶 🔋</span>
+                                </div>
+                                <div class="app-header">Insights</div>
+                                <div class="app-body">
+                                    <div style="text-align: center; margin-bottom: 16px;">
+                                        <div style="font-size: 24px; font-weight: 700; color: #1a5f3f;">Total ₦94,2690</div>
+                                    </div>
+                                    <div class="bar-chart">
+                                        <div class="bar" style="height: 45%;">
+                                            <div class="bar-label">Jan</div>
+                                        </div>
+                                        <div class="bar" style="height: 95%; background: #66bb6a;">
+                                            <div class="bar-label">Feb</div>
+                                        </div>
+                                        <div class="bar" style="height: 75%;">
+                                            <div class="bar-label">Mar</div>
+                                        </div>
+                                    </div>
+                                    <div class="insights-title" style="margin-top: 32px;">Top Expenses</div>
+                                    <div class="top-expenses">
+                                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 12px; background: #e8f5e9; border-radius: 10px;">
+                                            <div style="display: flex; align-items: center; gap: 10px;">
+                                                <div style="width: 36px; height: 36px; background: #4caf50; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">🏪</div>
+                                                <div>
+                                                    <div style="font-weight: 600; font-size: 13px;">Store Mart</div>
+                                                    <div style="font-size: 10px; color: #666;">This Week</div>
+                                                </div>
+                                            </div>
+                                            <div style="font-weight: 700; color: #1a5f3f;">₦8 34,350</div>
+                                        </div>
+                                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 12px; background: #f0f9f4; border-radius: 10px;">
+                                            <div style="display: flex; align-items: center; gap: 10px;">
+                                                <div style="width: 36px; height: 36px; background: #66bb6a; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">🍕</div>
+                                                <div>
+                                                    <div style="font-weight: 600; font-size: 13px;">Food Mart</div>
+                                                    <div style="font-size: 10px; color: #666;">Prev Order</div>
+                                                </div>
+                                            </div>
+                                            <div style="font-weight: 700; color: #1a5f3f;">₦N 26,500</div>
+                                        </div>
+                                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 12px; background: #fff9f0; border-radius: 10px;">
+                                            <div style="display: flex; align-items: center; gap: 10px;">
+                                                <div style="width: 36px; height: 36px; background: #ff9800; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">🚗</div>
+                                                <div>
+                                                    <div style="font-weight: 600; font-size: 13px;">Ride App</div>
+                                                    <div style="font-size: 10px; color: #666;">Prev Order</div>
+                                                </div>
+                                            </div>
+                                            <div style="font-weight: 700; color: #1a5f3f;">₦N 26,500</div>
+                                        </div>
+                                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 12px; background: #f5f0ff; border-radius: 10px;">
+                                            <div style="display: flex; align-items: center; gap: 10px;">
+                                                <div style="width: 36px; height: 36px; background: #9c27b0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">⚡</div>
+                                                <div>
+                                                    <div style="font-weight: 600; font-size: 13px;">Electronics Hub</div>
+                                                    <div style="font-size: 10px; color: #666;">Shop Swag</div>
+                                                </div>
+                                            </div>
+                                            <div style="font-weight: 700; color: #1a5f3f;">₦N5,230</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-nav">
+                                    <div class="nav-item ">
+                                        <div class="nav-icon">
+                                            <i class="fa fa-home "></i>
+
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="nav-item active">
+                                        <div class="nav-icon">
+                                             <i class="fa fa-pie-chart active"></i>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="nav-item">
+                                        <div class="nav-icon">
+                                             <i class="fa fa-trophy "></i>
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="nav-item">
+                                        <div class="nav-icon">
+                                             <i class="fa fa-cog "></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screenshot 6: Rewards -->
+            <div class="screenshot-card" id="screenshot6">
+                <div class="screenshot-header">
+                    <h3>Stay Consistent, Earn Rewards</h3>
+                    <p>Build habits with real insights</p>
+                </div>
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="screen-content">
+                                <div class="status-bar">
+                                    <span>9:41</span>
+                                    <span>📶 🔋</span>
+                                </div>
+                                <div class="app-header">Achievements</div>
+                                <div class="app-body">
+                                    <div class="reward-circle">
+                                        <div class="reward-star">⭐</div>
+                                        <div class="reward-level">Level 4</div>
+                                        <div class="reward-subtitle">Receipt Veteran</div>
+                                    </div>
+                                    <div style="text-align: center; color: #1a5f3f; font-weight: 600; margin-top: 12px;">
+                                        <div style="margin-bottom: 8px;">🎯 Checklit</div>
+                                        <div style="background: #e8f5e9; padding: 10px; border-radius: 8px; font-size: 13px;">
+                                            7 day streak • Keep it up!
+                                        </div>
+                                    </div>
+                                    <div class="achievement-list">
+                                        <div class="achievement-item">
+                                            <div style="display: flex; align-items: center; gap: 12px;">
+                                                <div class="achievement-icon">🎯</div>
+                                                <div>
+                                                    <div style="font-weight: 600; font-size: 13px;">Receipt Regular</div>
+                                                    <div style="font-size: 11px; color: #666;">Scan 100 receipts</div>
+                                                </div>
+                                            </div>
+                                            <div style="color: #4caf50; font-size: 18px;">✓</div>
+                                        </div>
+                                        <div class="achievement-item">
+                                            <div style="display: flex; align-items: center; gap: 12px;">
+                                                <div class="achievement-icon">📊</div>
+                                                <div>
+                                                    <div style="font-weight: 600; font-size: 13px;">Manual Master</div>
+                                                    <div style="font-size: 11px; color: #666;">Add 50 manual expenses of records</div>
+                                                </div>
+                                            </div>
+                                            <div style="background: #e0e0e0; color: #999; padding: 4px 12px; border-radius: 12px; font-size: 11px; font-weight: 600;">90</div>
+                                        </div>
+                                        <div class="achievement-item">
+                                            <div style="display: flex; align-items: center; gap: 12px;">
+                                                <div class="achievement-icon">🎖️</div>
+                                                <div>
+                                                    <div style="font-weight: 600; font-size: 13px;">Accuracy Hero</div>
+                                                    <div style="font-size: 11px; color: #666;">Maintain 95% accuracy</div>
+                                                </div>
+                                            </div>
+                                            <div style="background: #e0e0e0; color: #999; padding: 4px 12px; border-radius: 12px; font-size: 11px; font-weight: 600;">93%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-nav">
+                                    <div class="nav-item ">
+                                        <div class="nav-icon">
+                                            <i class="fa fa-home "></i>
+
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="nav-item">
+                                        <div class="nav-icon">
+                                             <i class="fa fa-pie-chart "></i>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="nav-item active">
+                                        <div class="nav-icon">
+                                             <i class="fa fa-trophy active"></i>
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="nav-item">
+                                        <div class="nav-icon">
+                                             <i class="fa fa-cog "></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="./main.js">
+       
+    </script>
+</body>
+</html>
